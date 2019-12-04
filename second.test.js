@@ -338,7 +338,7 @@ describe("Intcode tests", () => {
         const result = calculate(memoryCopy);
 
         if (result[0] === 19690720) {
-          console.log(`Result: ${100 * noun + verb}`);
+          expect(100 * noun + verb).toEqual(4847);
           break;
         }
       }
